@@ -182,10 +182,8 @@ ParseTree *Expr(istream *in, int *line) {
 
 	while ( true ) {
 		Token t = Parser::GetNextToken(in, line);
-		//cout << t;
 		if( t != PLUS && t != MINUS ) {
 			Parser::PushBackToken(t);
-         	//cout << t;
 			return t1;
 		}
 

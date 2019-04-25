@@ -7,15 +7,6 @@
 
 #include "parsetree.h"
 
-/*
-ostream& operator<<(ostream& out, const Value& v) {
-		if(v.getType()==STRTYPE)
-			out << "String: "+v.GetStrValue()<<endl;
-		else if(v.getType()==INTTYPE)
-			out << v.GetIntValue() <<endl;
-		return out;
-	}
-*/
 class Value {
 	int	ival;
 	string sval;
@@ -39,14 +30,7 @@ public:
 			throw std::runtime_error("using GetStrValue on a Value that is not a STRING");
 		return sval;
 	}
-	/*
-	ostream& operator<<(ostream& out) {
-		if(type==STRTYPE)
-			out << sval<<endl;
-		else if(type==INTTYPE)
-			out << ival <<endl;
-		return out;
-	}*/
+
 	//  We overload "<<" so that we can print "Values"
 	friend ostream& operator<<(ostream& out, const Value& v) {
 		if(v.GetType()==STRTYPE)
