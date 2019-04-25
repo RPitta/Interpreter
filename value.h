@@ -31,7 +31,7 @@ public:
 		return sval;
 	}
 
-	//  We overload "<<" so that we can print "Values"
+	// We overload "<<" so that we can print "Values"
 	friend ostream& operator<<(ostream& out, const Value& v) {
 		if(v.GetType()==STRTYPE)
 			out << v.GetStrValue() << endl;
