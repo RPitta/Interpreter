@@ -7,7 +7,7 @@
 
 namespace Parser {
 bool pushed_back = false;
-Token	pushed_token;
+Token pushed_token;
 
 static Token GetNextToken(istream *in, int *line) {
 	if( pushed_back ) {
