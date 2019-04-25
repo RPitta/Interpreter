@@ -9,4 +9,4 @@ These are the grammar rules of the language:
 
 ***
 
-The lexical analyzer converts a sequences of characters into a sequence of tokens. The resulting tokens then get passed into the parser (a recursive descent, top-down parsing implementation) which builds the parse tree from the read tokens. Finally, a series of static and dynamic (runtime) checks are performed on the nodes of the tree.
+The lexical analyzer converts a sequence of characters into a sequence of tokens. The resulting tokens then get passed into the parser (a recursive descent, top-down parsing implementation) which builds the parse tree from the read tokens. Finally, a series of static and dynamic (runtime) checks are performed on the nodes of the tree.
